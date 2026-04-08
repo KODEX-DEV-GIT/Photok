@@ -149,7 +149,7 @@ fun SettingsCallbacks(viewModel: SettingsViewModel) {
             CheckPasswordDialog {
                 Dialogs.showConfirmDialog(
                     context,
-                    stringResource(R.string.settings_advanced_reset_confirmation)
+                    context.getString(R.string.settings_advanced_reset_confirmation)
                 ) { _, _ ->
                     viewModel.resetComponents()
                 }

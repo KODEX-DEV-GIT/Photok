@@ -19,7 +19,6 @@ package dev.leonlatsch.photok.settings.ui.checkpassword
 import android.content.DialogInterface
 import android.os.Bundle
 import android.view.View
-import androidx.compose.runtime.Composable
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import dev.leonlatsch.photok.BR
@@ -31,7 +30,7 @@ import dev.leonlatsch.photok.uicomponnets.bindings.BindableDialogFragment
 
 @AndroidEntryPoint
 class CheckPasswordDialog(
-    private val onPasswordValid: @Composable (() -> Unit)? = null
+    private val onPasswordValid: (() -> Unit)? = null,
 ) : BindableDialogFragment<DialogCheckPasswordBinding>(R.layout.dialog_check_password) {
 
     private val viewModel: CheckPasswordViewModel by viewModels()
@@ -46,6 +45,7 @@ class CheckPasswordDialog(
                     binding.loadingOverlay.show()
                     binding.checkPasswordOldPasswordWrongLabel.hide()
                 }
+
                 CheckPasswordState.OLD_VALID -> handleOldValid()
                 CheckPasswordState.OLD_INVALID -> {
                     binding.loadingOverlay.hide()
@@ -67,6 +67,7 @@ class CheckPasswordDialog(
         binding.context = this
         binding.viewModel = viewModel
     }
+
 
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
