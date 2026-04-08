@@ -1,31 +1,29 @@
-<b>Photok – Privater Foto-Tresor, Fotos & Videos verstecken (Open Source)</b>
+<b>PrivaCam – Privater Foto Tresor, Bilder und Videos verstecken</b>
 
-Photok ist ein sicherer Foto-Tresor, mit dem du Fotos und Videos zuverlässig verstecken kannst. Schütze deine privaten Medien mit starker AES-256-Verschlüsselung, erstelle eine verschlüsselte Galerie und bewahre sensible Erinnerungen sicher auf deinem eigenen Gerät auf.
+PrivaCam ist ein sicherer privater Foto-Tresor, der Ihnen hilft, Fotos und Videos mit starker AES-256-Verschlüsselung zu verstecken. Schützen Sie Ihre sensiblen Medien, erstellen Sie eine verschlüsselte Galerie und bewahren Sie Ihre privaten Erinnerungen sicher auf Ihrem eigenen Gerät auf.
 
-Alle Dateien werden lokal auf deinem Gerät verschlüsselt und nur im Arbeitsspeicher entschlüsselt, während du die App verwendest. Ein Cloud-Upload ist nicht erforderlich.
+Alle Dateien werden lokal verschlüsselt und nur im Arbeitsspeicher entschlüsselt, während Sie die App nutzen. Kein Cloud-Upload erforderlich.
 
-Photok ist Open Source, werbefrei und verfolgt einen konsequenten Privacy-First-Ansatz. Die App verwendet minimale, datenschutzfreundliche Nutzungsanalysen, um Stabilität und Benutzererlebnis zu verbessern.
+PrivaCam ist werbefrei und wurde mit einer Privacy-First-Philosophie entwickelt. Ihre Daten bleiben immer auf Ihrem Gerät.
 
-<b>Warum Photok?</b>
+<b>Warum PrivaCam wählen?</b>
 • Fotos und Videos sicher verstecken
-• Privater, verschlüsselter Galerie-Tresor mit AES-256
-• Offline-Speicherung – deine Dateien bleiben auf deinem Gerät
-• Open Source und transparente Sicherheit
-• Werbefreie Nutzung
-• Entwickelt von einem unabhängigen Entwickler
+• Private verschlüsselte Galerie mit AES-256 Schutz
+• Offline-Tresor – Ihre Dateien bleiben auf Ihrem Gerät
+• Transparente Sicherheitsarchitektur
+• Werbefreie Benutzererfahrung
+• Entwickelt für datenschutzbewusste Benutzer
 
-<b>Funktionen des Foto-Tresors</b>
-• Fotos & Videos aus deiner Galerie importieren
+<b>Tresor Funktionen</b>
+• Fotos und Videos aus Ihrer Galerie importieren
 • Private Medien in Alben organisieren
-• Dateien jederzeit wieder exportieren
+• Dateien jederzeit exportieren
 • Verschlüsselte Backups erstellen und wiederherstellen
-• Tresor per Fingerabdruck entsperren
-• Medien direkt an Photok teilen
-• App-Icon optional ausblenden
+• Entsperren Sie Ihren Tresor mit Fingerabdruck
+• Medien direkt in den Tresor teilen
+• Option zum Verstecken des App-Symbols
 • Originaldateien nach dem Import automatisch löschen
 
-<b>Datenschutz im Fokus</b>
-Photok wurde für Menschen entwickelt, die echte Kontrolle über ihre privaten Fotos und Videos möchten.
-Die Verschlüsselung erfolgt vollständig auf deinem Gerät. Datenschutzfreundliche Nutzungsanalysen dienen ausschließlich der Verbesserung der App und werden niemals für Werbung oder app-übergreifendes Tracking verwendet.
-
-<a href="https://github.com/leonlatsch/Photok">Zum Open-Source-Projekt auf GitHub.</a>
+<b>Datenschutzorientiertes Design</b>
+PrivaCam wurde für Leute entwickelt, die echte Kontrolle über ihre privaten Fotos und Videos haben wollen.
+Die Verschlüsselung erfolgt vollständig auf Ihrem Gerät. Kein Tracking durch Dritte, keine Cloud-Uploads, keine Kompromisse.

@@ -197,18 +197,7 @@ val PreferenceScreenConfigContent = buildList {
                     title = R.string.settings_other_feedback_title,
                     summary = R.string.settings_other_feedback_summary,
                 ),
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_DONATE,
-                    icon = R.drawable.ic_money,
-                    title = R.string.settings_other_donate_title,
-                    summary = R.string.settings_other_donate_summary,
-                ),
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_SOURCECODE,
-                    icon = R.drawable.ic_code,
-                    title = R.string.settings_other_sourcecode_title,
-                    summary = R.string.settings_other_sourcecode_summary,
-                ),
+                // Removed Donate and Source code options
                 Preference.Simple(
                     key = SettingsFragment.KEY_ACTION_CREDITS,
                     icon = R.drawable.ic_book,

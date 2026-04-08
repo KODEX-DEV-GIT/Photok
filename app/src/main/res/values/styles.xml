@@ -1,5 +1,5 @@
 <!--
-  ~   Copyright 2020–2026 Leon Latsch
+  ~   Copyright 2020–2026 PrivaCam
   ~
   ~   Licensed under the Apache License, Version 2.0 (the "License");
   ~   you may not use this file except in compliance with the License.
@@ -51,9 +51,10 @@
 
     <!-- TEXT VIEW -->
     <style name="TextViewStyle" parent="android:Widget.TextView">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textFontWeight">400</item>
         <item name="android:scrollbarSize">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
     </style>
 
     <style name="LightDetailTextViewStyle" parent="TextViewStyle">
@@ -84,7 +85,8 @@
         <item name="android:fontFamily">@font/lobster_regular</item>
         <item name="android:text">@string/app_name</item>
         <item name="android:textColor">@color/appTitleColor</item>
-        <item name="android:textSize">62sp</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:letterSpacing">0.02</item>
     </style>
 
     <!-- EDIT TEXT -->
@@ -94,10 +96,11 @@
 
     <!-- BUTTON -->
     <style name="buttonStyle" parent="android:Widget.Holo.Button">
-        <item name="android:textFontWeight">600</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:background">@drawable/bg_button</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:letterSpacing">0.03</item>
     </style>
 
     <!-- PROGRESS BAR -->

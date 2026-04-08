@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~   Copyright 2020–2026 Leon Latsch
+  ~   Copyright 2020–2026 PrivaCam
   ~
   ~   Licensed under the Apache License, Version 2.0 (the "License");
   ~   you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#50C9C3</color>
-    <color name="colorPrimaryDark">#319f99</color>
-    <color name="colorAccent">#50c9c3</color>
-    <color name="colorComplementary">#c95056</color>
+    <color name="colorPrimary">#7B73FF</color>
+    <color name="colorPrimaryDark">#5A52E0</color>
+    <color name="colorAccent">#FF7DAD</color>
+    <color name="colorComplementary">#73FFD9</color>
 
     <!-- Components -->
-    <color name="background">#1a1a1a</color>
-    <color name="componentBackground">#181818</color>
-    <color name="textColor">#fafafa</color>
-    <color name="secondaryTextColor">#B3B3B3</color>
+    <color name="background">#121024</color>
+    <color name="componentBackground">#1A1835</color>
+    <color name="textColor">#F0EEFF</color>
+    <color name="secondaryTextColor">#9E9CB8</color>
     <color name="appTitleColor">@android:color/white</color>
     <color name="disabledColor">@color/darkGray</color>
     <color name="dotSelectedColor">@color/lightGray</color>

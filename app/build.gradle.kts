@@ -3,8 +3,8 @@ import com.android.sdklib.AndroidVersion.VersionCodes
 plugins {
     id("com.android.application")
     id("com.jaredsburrows.license")
-    kotlin("android")
     kotlin("kapt")
+    kotlin("android")
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.21"
 }
 
@@ -20,7 +20,7 @@ android {
     compileSdk = VersionCodes.BAKLAVA
 
     defaultConfig {
-        applicationId = "dev.leonlatsch.photok"
+        applicationId = "com.dtie.aske.privacam"
         minSdk = VersionCodes.P
         targetSdk = VersionCodes.BAKLAVA
 
@@ -37,7 +37,7 @@ android {
         }
 
         base {
-            archivesName = "photok-$versionName"
+            archivesName = "privacam-$versionName"
         }
     }
 
@@ -88,10 +88,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_21
     }
 
-//    kotlinOptions {
-//        jvmTarget = "1.8"
-//    }
-
+    kotlinOptions {
+        freeCompilerArgs += listOf("-Xannotation-default-target=param-property")
+    }
     lint {
         lintConfig = file("$rootDir/gradle/lint.xml")
         baseline = file("$rootDir/gradle/lint-baseline.xml")

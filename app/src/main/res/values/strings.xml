@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-~   Copyright 2020–2026 Leon Latsch
+~   Copyright 2020–2026 PrivaCam
 ~
 ~   Licensed under the Apache License, Version 2.0 (the "License");
 ~   you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 <resources>
 
     <!-- COMMON -->
-    <string name="common_copyright_notice">Copyright \u00A9 2020–2026 Leon Latsch</string>
+    <string name="common_copyright_notice">Copyright \u00A9 2026 PrivaCam</string>
     <string name="common_slash">/</string>
     <string name="common_percent">%</string>
     <string name="common_pipe">|</string>
@@ -41,7 +41,7 @@
 
     <!-- IMPORT -->
     <string name="import_importing">Importing File(s)</string>
-    <string name="import_permission_rationale">Photok needs to access your storage, to import files.</string>
+    <string name="import_permission_rationale">PrivaCam needs to access your storage, to import files.</string>
     <string name="import_sharted_question">Do you want to import %1$d file(s)?</string>
 
     <!-- SETUP -->
@@ -57,19 +57,19 @@
     <string name="setupSetup">Setup</string>
 
     <!-- UNLOCK -->
-    <string name="unlock_title">Unlock your safe</string>
+    <string name="unlock_title">Unlock your vault</string>
     <string name="unlock_enter_password">Enter password</string>
     <string name="unlock_button">Unlock</string>
     <string name="unlock_wrong_password">\u26A0 Wrong password</string>
 
     <!-- GALLERY -->
-    <string name="gallery_placeholder">There are no files in your safe</string>
+    <string name="gallery_placeholder">There are no files in your vault</string>
     <string name="gallery_all_photos_label">All files</string>
     <string name="gallery_albums_label">Albums</string>
     <string name="gallery_albums_placeholder">Create your first album</string>
     <string name="gallery_albums_create_title">Create Album</string>
     <string name="gallery_albums_rename_title">Rename Album</string>
-    <string name="gallery_albums_create_placeholder">Homework ;)</string>
+    <string name="gallery_albums_create_placeholder">My Collection ;)</string>
     <string name="gallery_albums_select_title">Select an Album</string>
     <string name="gallery_albums_deleted">Album deleted</string>
     <string name="gallery_albums_photos_added">%1$d items added</string>
@@ -80,7 +80,7 @@
     <string name="import_menu_new_files_title">Import new files</string>
     <string name="import_menu_new_files_description">Import photos and videos from your gallery.</string>
     <string name="import_menu_restore_title">Restore a backup</string>
-    <string name="import_menu_restore_description">Restore a Photok backup. Files will be added to your current files.</string>
+    <string name="import_menu_restore_description">Restore a PrivaCam backup. Files will be added to your current files.</string>
     <string name="import_menu_delete_warning">Imported files will be deleted</string>
     <string name="import_menu_album_tooltip">Files will be added to \"%s\" after importing</string>
 
@@ -126,18 +126,18 @@
     <string name="export_are_you_sure_this">Are you sure, you want to <b>export</b> this file to your gallery?</string>
     <string name="export_and_delete_are_you_sure_this">Are you sure, you want to <b>export</b> this file to your gallery and delete it?</string>
     <string name="export_exporting">Exporting file(s)…</string>
-    <string name="export_permission_rationale">Photok needs to access your storage, to export files.</string>
+    <string name="export_permission_rationale">PrivaCam needs to access your storage, to export files.</string>
     <string name="export_finished">Exported</string>
     <string name="export_and_delete_finished">Exported and deleted</string>
 
     <!-- ABOUT -->
     <string name="about_version">Version:</string>
     <string name="about_developed_by">Developed by:</string>
-    <string name="about_website_label">leonlatsch.dev</string>
-    <string name="about_website_url">https://leonlatsch.dev</string>
+    <string name="about_website_label">PrivaCam</string>
+    <string name="about_website_url">https://privacam.app</string>
     <string name="about_third_party">Third Party Software</string>
     <string name="about_privacy_policy">Privacy Policy</string>
-    <string name="about_privacy_policy_url">https://leonlatsch.dev/photok_privacy_policy</string>
+    <string name="about_privacy_policy_url">https://privacam.app/privacy_policy</string>
     <string name="about_menu_news">News</string>
 
     <!-- SETTINGS -->
@@ -160,7 +160,7 @@
     <string name="settings_security_change_password_title">Change Password</string>
     <string name="settings_security_change_password_summary">Change your password</string>
     <string name="settings_security_biometric_title">Biometric Unlock</string>
-    <string name="settings_security_biometric_summary">Unlock Photok with biometric authentication.</string>
+    <string name="settings_security_biometric_summary">Unlock PrivaCam with biometric authentication.</string>
     <string name="settings_security_biometric_not_available">Biometric Unlock is not available</string>
     <string name="settings_security_timeout_title">Automatic Lock Timeout</string>
     <string name="settings_security_timeout_summary">Automatic lock after given time in background</string>
@@ -171,8 +171,8 @@
     <string name="settings_security_timeout_ten_minute">10 Minutes</string>
     <string name="settings_security_timeout_never">Never</string>
     <string name="settings_security_launch_code_title">Secret Launch Code</string>
-    <string name="settings_security_launch_code_summary">Secret code to launch Photok from the phone dialer.</string>
-    <string name="settings_security_launch_code_message">Enter *#*#[your code]#*#* in phone dialer to launch Photok.</string>
+    <string name="settings_security_launch_code_summary">Secret code to launch PrivaCam from the phone dialer.</string>
+    <string name="settings_security_launch_code_message">Enter *#*#[your code]#*#* in phone dialer to launch PrivaCam.</string>
     <string name="settings_security_launch_code_prefix">*#*#</string>
     <string name="settings_security_launch_code_suffix">#*#*</string>
     <string name="settings_security_hide_app_title">Hide App</string>
@@ -180,11 +180,11 @@
 
     <string name="settings_category_advanced">Advanced</string>
     <string name="settings_category_advanced_summary">Use carefully</string>
-    <string name="settings_advanced_reset_title">Reset Safe</string>
+    <string name="settings_advanced_reset_title">Reset Vault</string>
     <string name="settings_advanced_reset_summary">Wipe data and reset password</string>
-    <string name="settings_advanced_reset_confirmation">Do you REALLY want to reset your safe? All data will be lost!</string>
+    <string name="settings_advanced_reset_confirmation">Do you REALLY want to reset your vault? All data will be lost!</string>
     <string name="settings_advanced_backup_title">Backup</string>
-    <string name="settings_advanced_backup_summary">Create a backup of your safe</string>
+    <string name="settings_advanced_backup_summary">Create a backup of your vault</string>
     <string name="settings_advanced_delete_imported_title">Delete imported files</string>
     <string name="settings_advanced_delete_imported_summary">Delete files after importing them</string>
     <string name="settings_advanced_delete_exported_title">Delete exported files</string>
@@ -192,26 +192,20 @@
 
     <string name="settings_other_title">Other</string>
     <string name="settings_other_feedback_title">Feedback</string>
-    <string name="settings_other_feedback_summary">Send me an email with feedback</string>
-    <string name="settings_other_feedback_mail_subject">Feedback to Photok</string>
-    <string name="settings_other_feedback_mail_body">Write a feedback about Photok :)</string>
-    <string name="settings_other_feedback_mail_emailaddress">photok@leonlatsch.dev</string>
-    <string name="settings_other_donate_title">Donate</string>
-    <string name="settings_other_donate_summary">Support the development of Photok</string>
-    <string name="settings_other_donate_url">https://ko-fi.com/leonlatsch</string>
-    <string name="settings_other_sourcecode_title">Source Code</string>
-    <string name="settings_other_sourcecode_summary">Contribute to Photok</string>
-    <string name="settings_other_sourcecode_url">https://github.com/leonlatsch/Photok</string>
+    <string name="settings_other_feedback_summary">Send us an email with feedback</string>
+    <string name="settings_other_feedback_mail_subject">Feedback for PrivaCam</string>
+    <string name="settings_other_feedback_mail_body">Write a feedback about PrivaCam :)</string>
+    <string name="settings_other_feedback_mail_emailaddress">support@privacam.app</string>
     <string name="settings_other_credits_title">Credits</string>
     <string name="settings_other_credits_summary">Contributors and credits</string>
     <string name="settings_other_telemetry_title">Data collection</string>
     <string name="settings_other_telemetry_summary">Manage collection of usage data</string>
     <string name="settings_other_about_title">About</string>
-    <string name="settings_other_about_summary">Information about Photok</string>
+    <string name="settings_other_about_summary">Information about PrivaCam</string>
 
     <!-- CREDITS -->
     <string name="credits_contributors_title">Contributors</string>
-    <string name="credits_contributors_hint">Visit Photok at GitHub to see all contributors</string>
+    <string name="credits_contributors_hint">Visit PrivaCam to see all contributors</string>
     <string name="credits_icons_title">Icons</string>
 
     <!-- CHANGE PASSWORD -->
@@ -229,15 +223,15 @@
     <string name="settings_security_check_password_title">Verify Password</string>
 
     <!-- HIDE APP -->
-    <string name="hide_app_title_hide">Hide Photok</string>
-    <string name="hide_app_title_show">Show Photok</string>
-    <string name="hide_app_status_label">Photok is currently:</string>
+    <string name="hide_app_title_hide">Hide PrivaCam</string>
+    <string name="hide_app_title_show">Show PrivaCam</string>
+    <string name="hide_app_status_label">PrivaCam is currently:</string>
     <string name="hide_app_status_visible">VISIBLE</string>
     <string name="hide_app_status_hidden">HIDDEN</string>
     <string name="hide_app_app_name_stealth">Phone</string>
-    <string name="hide_app_confirm_hide">Do you really want to hide Photok?</string>
-    <string name="hide_app_confirm_show">Do you want to show Photok again?</string>
-    <string name="hide_app_hint">Once hidden, Photok can only be launched from the phone dial pad, with your secret launch code.</string>
+    <string name="hide_app_confirm_hide">Do you really want to hide PrivaCam?</string>
+    <string name="hide_app_confirm_show">Do you want to show PrivaCam again?</string>
+    <string name="hide_app_hint">Once hidden, PrivaCam can only be launched from the phone dial pad, with your secret launch code.</string>
     <string name="hide_app_hint_current_code">Current launch code:</string>
 
     <!-- ON BOARDING -->
@@ -246,9 +240,9 @@
     <string name="onboarding_skip"><u>Skip</u></string>
 
     <string name="onboarding_slide1_title">Welcome to</string>
-    <string name="onboarding_slide1_description">A safe place for your photos.</string>
+    <string name="onboarding_slide1_description">Your private vault for photos and videos.</string>
     <string name="onboarding_slide2_title">Create a password</string>
-    <string name="onboarding_slide2_description">Create a secure password. Your password is used to encrypt your photos directly on your phone.</string>
+    <string name="onboarding_slide2_description">Create a secure password. Your password is used to encrypt your media directly on your phone.</string>
     <string name="onboarding_slide3_title">Start Importing</string>
     <string name="onboarding_slide3_description">Start importing your photos and keep them safe from others.\nAfterwards you can delete them in your gallery.</string>
 
@@ -268,16 +262,16 @@
     <!-- NEWS -->
     <string name="news_new_in_title">New in</string>
     <string name="news_view_changelog">View Changelog</string>
-    <string name="news_changelog_url">https://github.com/leonlatsch/Photok/releases</string>
+    <string name="news_changelog_url">https://privacam.app/changelog</string>
 
     <!-- Recovery Menu -->
     <string name="recovery_subtitle">Recovery Menu</string>
-    <string name="recovery_menu_item_open_photok">Open Photok</string>
+    <string name="recovery_menu_item_open_photok">Open PrivaCam</string>
     <string name="recovery_subtitle_reset_hide_app">Reset Hide App Setting</string>
 
     <!-- Migration -->
     <string name="migration_initial_title_welcome">Welcome to</string>
-    <string name="migration_initial_explaination">This version of Photok introduces a new encryption method. In order to continue to your gallery, there is a migration required.</string>
+    <string name="migration_initial_explaination">This version of PrivaCam introduces a new encryption method. In order to continue to your gallery, there is a migration required.</string>
     <string name="migration_initial_button">Get started</string>
 
     <string name="migration_initial_stage_backup_checklist">Backup your data</string>
@@ -292,7 +286,7 @@
     <string name="migration_initial_stage_ready_button">Start migration</string>
 
     <string name="migration_running_title">Migrating your gallery</string>
-    <string name="migration_running_progress">%d of %d files processed</string>
+    <string name="migration_running_progress">%1 of %2 files processed</string>
     <string name="migration_running_advice">If this screen stays open, the migration will run faster.</string>
 
     <string name="migration_done_title">Gallery migration done</string>
@@ -308,14 +302,14 @@
 
 
     <!-- Biometric -->
-    <string name="biometric_unlock_title">Unlock Photok</string>
+    <string name="biometric_unlock_title">Unlock PrivaCam</string>
     <string name="biometric_unlock_subtitle">Verify your identity to unlock</string>
-    <string name="biometric_unlock_cancel">Use Photok password</string>
+    <string name="biometric_unlock_cancel">Use PrivaCam password</string>
 
     <string name="biometric_unlock_setup_title">Enable biometric unlock</string>
     <string name="biometric_unlock_setup_subtitle">To enable biometric unlock, confirm your identity</string>
 
-    <string name="biometric_unlock_error">Biometric unlock failed. Use your Photok password.</string>
+    <string name="biometric_unlock_error">Biometric unlock failed. Use your PrivaCam password.</string>
     <string name="biometric_unlock_hint_button">Unlock with biometrics</string>
 
     <!-- Sorting -->
@@ -339,8 +333,8 @@
     <string name="video_player_unmute">Unmute</string>
     
     <!-- Telemetry -->
-    <string name="telemetry_sheet_title">Help improve Photok</string>
-    <string name="telemetry_sheet_paragraph_1">Photok can optionally send anonymous usage statistics to help improve the app.</string>
+    <string name="telemetry_sheet_title">Help improve PrivaCam</string>
+    <string name="telemetry_sheet_paragraph_1">PrivaCam can optionally send anonymous usage statistics to help improve the app.</string>
     <string name="telemetry_sheet_paragraph_2">The data processed is completely anonymized and does not allow any conclusions to be drawn about personal information.</string>
     <string name="telemetry_sheet_paragraph_3">Sending anonymous usage data is optional and can be turned off at any time in the settings.</string>
     <string name="telemetry_learn_more">Learn more</string>
