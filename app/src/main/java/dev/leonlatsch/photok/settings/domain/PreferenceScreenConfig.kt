@@ -186,37 +186,5 @@ val PreferenceScreenConfigContent = buildList {
             ),
         )
     )
-    add(
-        PreferenceSection(
-            title = R.string.settings_other_title,
-            summary = null,
-            preferences = listOf(
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_FEEDBACK,
-                    icon = R.drawable.ic_feedback,
-                    title = R.string.settings_other_feedback_title,
-                    summary = R.string.settings_other_feedback_summary,
-                ),
-                // Removed Donate and Source code options
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_CREDITS,
-                    icon = R.drawable.ic_book,
-                    title = R.string.settings_other_credits_title,
-                    summary = R.string.settings_other_credits_summary,
-                ),
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_TELEMETRY,
-                    icon = R.drawable.ic_data_object,
-                    title = R.string.settings_other_telemetry_title,
-                    summary = R.string.settings_other_telemetry_summary,
-                ),
-                Preference.Simple(
-                    key = SettingsFragment.KEY_ACTION_ABOUT,
-                    icon = R.drawable.ic_info,
-                    title = R.string.settings_other_about_title,
-                    summary = R.string.settings_other_about_summary,
-                ),
-            ),
-        )
-    )
+
 }
