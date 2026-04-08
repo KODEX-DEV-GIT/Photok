@@ -16,7 +16,6 @@
 
 package dev.leonlatsch.photok.settings.ui.compose
 
-import android.os.Build
 import androidx.activity.compose.LocalActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -68,16 +67,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.navigation.fragment.findNavController
-import dev.leonlatsch.photok.BuildConfig
 import dev.leonlatsch.photok.R
 import dev.leonlatsch.photok.backup.domain.BackupStrategy
 import dev.leonlatsch.photok.backup.ui.BackupBottomSheetDialogFragment
 import dev.leonlatsch.photok.databinding.BindingConverters
 import dev.leonlatsch.photok.other.extensions.launchAndIgnoreTimer
 import dev.leonlatsch.photok.other.extensions.show
-import dev.leonlatsch.photok.other.openUrl
-import dev.leonlatsch.photok.other.sendEmail
 import dev.leonlatsch.photok.other.setAppDesign
 import dev.leonlatsch.photok.settings.data.Config
 import dev.leonlatsch.photok.settings.domain.Preference
@@ -154,7 +149,7 @@ fun SettingsCallbacks(viewModel: SettingsViewModel) {
             CheckPasswordDialog {
                 Dialogs.showConfirmDialog(
                     context,
-                    context.getString(R.string.settings_advanced_reset_confirmation)
+                    stringResource(R.string.settings_advanced_reset_confirmation)
                 ) { _, _ ->
                     viewModel.resetComponents()
                 }

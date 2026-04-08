@@ -19,6 +19,7 @@ package dev.leonlatsch.photok.settings.ui.checkpassword
 import android.content.DialogInterface
 import android.os.Bundle
 import android.view.View
+import androidx.compose.runtime.Composable
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import dev.leonlatsch.photok.BR
@@ -30,7 +31,7 @@ import dev.leonlatsch.photok.uicomponnets.bindings.BindableDialogFragment
 
 @AndroidEntryPoint
 class CheckPasswordDialog(
-    private val onPasswordValid: (() -> Unit)? = null
+    private val onPasswordValid: @Composable (() -> Unit)? = null
 ) : BindableDialogFragment<DialogCheckPasswordBinding>(R.layout.dialog_check_password) {
 
     private val viewModel: CheckPasswordViewModel by viewModels()
