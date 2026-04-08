@@ -170,37 +170,7 @@ fun SettingsCallbacks(viewModel: SettingsViewModel) {
             false
         }
 
-        viewModel.registerPreferenceCallback(SettingsFragment.KEY_ACTION_FEEDBACK) {
-            val email = context.getString(R.string.settings_other_feedback_mail_emailaddress)
-            val subject =
-                "${context.getString(R.string.settings_other_feedback_mail_subject)} (App ${BuildConfig.VERSION_NAME} / Android ${Build.VERSION.RELEASE})"
-            val text = context.getString(R.string.settings_other_feedback_mail_body)
 
-            context.sendEmail(
-                email = email,
-                subject = subject,
-                text = text,
-                chooserTitle = context.getString(R.string.settings_other_feedback_title)
-            )
-            false
-        }
-
-        // Removed Donate and Source code options
-
-        viewModel.registerPreferenceCallback(SettingsFragment.KEY_ACTION_CREDITS) {
-            fragment.findNavController().navigate(R.id.action_settingsFragment_to_creditsFragment)
-            false
-        }
-
-        viewModel.registerPreferenceCallback(SettingsFragment.KEY_ACTION_TELEMETRY) {
-            showUsageDataSheet = true
-            false
-        }
-
-        viewModel.registerPreferenceCallback(SettingsFragment.KEY_ACTION_ABOUT) {
-            fragment.findNavController().navigate(R.id.action_settingsFragment_to_aboutFragment)
-            false
-        }
     }
 
     SecretLaunchCodeDialog(
