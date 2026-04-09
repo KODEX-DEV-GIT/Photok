@@ -30,6 +30,7 @@ import androidx.navigation.NavOptions
 import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import dev.leonlatsch.photok.R
+import dev.leonlatsch.photok.ads.AdsProvider
 import dev.leonlatsch.photok.databinding.ActivityMainBinding
 import dev.leonlatsch.photok.main.ui.navigation.MainMenu
 import dev.leonlatsch.photok.settings.data.Config
@@ -54,11 +55,16 @@ class MainActivity : BindableActivity<ActivityMainBinding>(R.layout.activity_mai
     @Inject
     override lateinit var config: Config
 
+    @Inject
+    lateinit var adsProvider: AdsProvider
+
     var onOrientationChanged: (Int) -> Unit = {} // Init empty
 
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        adsProvider.init(this)
+        adsProvider.loadBanner(binding.bannerAdContainer)
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
@@ -69,6 +75,7 @@ class MainActivity : BindableActivity<ActivityMainBinding>(R.layout.activity_mai
             navController.addOnDestinationChangedListener { controller, destination, arguments ->
                 val showMenu = FragmentsWithMenu.contains(destination.id)
                 binding.mainMenuComposeContainer.isVisible = showMenu
+                binding.bannerAdContainer.isVisible = showMenu
 
                 WindowCompat.getInsetsController(
                     window, window.decorView

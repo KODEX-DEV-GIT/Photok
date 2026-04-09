@@ -41,6 +41,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navGraph="@navigation/main_nav_graph" />
 
+        <FrameLayout
+            android:id="@+id/bannerAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/mainMenuComposeContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_height="50dp"
+            tools:visibility="visible" />
+
         <androidx.compose.ui.platform.ComposeView
             android:id="@+id/mainMenuComposeContainer"
             android:layout_width="match_parent"

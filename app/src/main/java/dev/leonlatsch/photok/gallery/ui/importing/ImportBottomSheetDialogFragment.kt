@@ -20,8 +20,10 @@ import android.net.Uri
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
 import dev.leonlatsch.photok.R
+import dev.leonlatsch.photok.ads.AdsProvider
 import dev.leonlatsch.photok.model.repositories.ImportSource
 import dev.leonlatsch.photok.uicomponnets.base.processdialogs.BaseProcessBottomSheetDialogFragment
+import javax.inject.Inject
 
 
 /**
@@ -42,11 +44,19 @@ class ImportBottomSheetDialogFragment(
     true
 ) {
 
+    @Inject
+    lateinit var adsProvider: AdsProvider
+
     override val viewModel: ImportViewModel by viewModels()
 
     override fun prepareViewModel(items: List<Uri>?) {
         viewModel.albumUUID = albumUUID
         viewModel.importSource = importSource
         super.prepareViewModel(items?.reversed()) // Reverse list to keep order in system gallery
+    }
+
+    override fun onProcessingDone() {
+        super.onProcessingDone()
+        adsProvider.showInterstitial(requireActivity())
     }
 }

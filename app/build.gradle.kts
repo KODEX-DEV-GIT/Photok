@@ -210,4 +210,7 @@ dependencies {
 
     // Telemetry
     implementation("com.telemetrydeck:kotlin-sdk:6.3.0")
+
+    // Ads
+    playImplementation("com.google.android.gms:play-services-ads:23.6.0")
 }
