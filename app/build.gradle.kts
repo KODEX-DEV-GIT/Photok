@@ -213,4 +213,16 @@ dependencies {
 
     // Ads
     playImplementation("com.google.android.gms:play-services-ads:23.6.0")
+
+//    Facebook App Links for attribution
+    implementation("com.facebook.android:facebook-applinks:18.0.2")
+    implementation("com.facebook.android:audience-network-sdk:6.19.0")
+// TopOn
+    implementation("com.google.android.gms:play-services-basement:18.4.0")
+    implementation("com.anythink.sdk:core-tpn:6.4.69")
+    implementation("com.anythink.sdk:interstitial-tpn:6.4.69")
+    implementation("androidx.appcompat:appcompat:1.1.0")
+    implementation("androidx.browser:browser:1.4.0")
+    implementation("com.anythink.sdk:adapter-tpn-facebook:6.4.69")
+    implementation("androidx.annotation:annotation:1.0.0")
 }

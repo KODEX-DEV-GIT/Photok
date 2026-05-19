@@ -21,6 +21,8 @@ import android.content.Intent
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ProcessLifecycleOwner
+import com.anythink.core.api.ATSDK
+import com.facebook.ads.AudienceNetworkAds
 import dagger.hilt.android.HiltAndroidApp
 import dev.leonlatsch.photok.main.ui.MainActivity
 import dev.leonlatsch.photok.model.repositories.CleanupDeadFilesUseCase
@@ -64,7 +66,8 @@ class BaseApplication : Application(), DefaultLifecycleObserver {
 
     private var wentToBackgroundAt = 0L
     private var ignoreNextTimeout = false
-
+    var APP_ID: String = "h6a0c084d79c84"
+    var APP_KEY: String = "a7b31714f05ecbe4ce3ca4159693443a7"
     override fun onCreate() {
         super<Application>.onCreate()
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
@@ -76,6 +79,9 @@ class BaseApplication : Application(), DefaultLifecycleObserver {
 
         setAppDesign(config.systemDesign)
         cleanupDeadFilesUseCase()
+        AudienceNetworkAds.initialize(this)
+
+        ATSDK.init(this, APP_ID, APP_KEY)
     }
 
     override fun onDestroy(owner: LifecycleOwner) {

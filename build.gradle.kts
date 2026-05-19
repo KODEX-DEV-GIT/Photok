@@ -2,6 +2,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://jfrog.anythinktech.com/artifactory/overseas_sdk")
+        }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:9.1.0")
@@ -17,6 +20,9 @@ allprojects {
         google()
         mavenCentral()
         maven("https://jitpack.io")
+        maven {
+            url = uri("https://jfrog.anythinktech.com/artifactory/overseas_sdk")
+        }
     }
 }
 

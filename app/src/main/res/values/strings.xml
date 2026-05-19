@@ -343,6 +343,8 @@
     <string name="telemetry_toggle">Allow collection of usage data</string>
 
     <!-- AdMob -->
+    <string name="facebook_app_id" translatable="false">1897841880920536</string>
+    <string name="facebook_client_token" translatable="false">c6b9748344db1d17c4a06106c8e26bdb</string>
     <string name="admob_app_id" translatable="false">ca-app-pub-4239528192908800~6456045019</string>
     <string name="admob_banner_id" translatable="false">ca-app-pub-4239528192908800/5741729142</string>
     <string name="admob_interstitial_id" translatable="false">ca-app-pub-4239528192908800/9489402465</string>
